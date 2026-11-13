@@ -1,0 +1,21 @@
+# Eclipse 워크스페이스 메타데이터 / 서버 설정 (올리지 않음)
+.metadata/
+Servers/
+RemoteSystemsTempFiles/
+
+# 빌드 결과물
+bin/
+build/
+target/
+*.class
+*.war
+
+# 톰캣 임시 파일, 로그
+tmp0/
+wtpwebapps/
+*.log
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+*.swp
