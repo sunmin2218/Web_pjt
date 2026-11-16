@@ -4,17 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+
+    <jsp:include page="./view/include/nav.jsp"></jsp:include>
+    
+    
+    
 </head>
 <body>
 
-<h2>HOME</h2>
+    <h2>HOME</h2>
     
-    <a href="/firstpjt/">home</a>
-    &nbsp;&nbsp; |  &nbsp;&nbsp;
-    <a href="/firstpjt/signup.mem">sign-up</a>
-    &nbsp;&nbsp; |  &nbsp;&nbsp;
-    <a href="/firstpjt/signup.mem">sign-in</a>
+    <jsp:include page="./view/include/nav.jsp"></jsp:include>
+    
     
 </body>
 </html>

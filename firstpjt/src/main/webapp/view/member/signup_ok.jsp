@@ -8,7 +8,11 @@
 </head>
 <body>
 
-    this page is signup ok!!
+	<jsp:include page="../include/nav.jsp"></jsp:include>
+
+    <br><br>
+
+	This page is signup OK!!
 
 </body>
 </html>

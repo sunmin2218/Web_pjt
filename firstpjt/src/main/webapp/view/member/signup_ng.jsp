@@ -8,7 +8,13 @@
 </head>
 <body>
 
-    this page is signup ng!!
+    
+    <jsp:include page="../include/nav.jsp"></jsp:include>
+    
+    <br><br>
+    
+    this page is signup NG!!
+    
 
 </body>
 </html>
