@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+header {
+	width: 100%;
+}
+
+header div.header_wrap {
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	border-bottom: 1px solid #ccc;
+	background-color: rgba(200, 200, 200, .1);
+}

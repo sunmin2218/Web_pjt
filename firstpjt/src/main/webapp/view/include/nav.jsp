@@ -8,7 +8,7 @@
     
     if (object != null) {
     	%>
-    	<a href="<%= request.getContextPath().concat(Config.HOME) %>">home</a>
+    <a href="<%= request.getContextPath().concat(Config.HOME) %>">home</a>
     &nbsp;&nbsp; |  &nbsp;&nbsp;
     <a href="<%= request.getContextPath().concat(MemberConfig.MEMBER_SIGNOUT_CONFIRM) %>">sign-out</a>
     &nbsp;&nbsp; |  &nbsp;&nbsp;

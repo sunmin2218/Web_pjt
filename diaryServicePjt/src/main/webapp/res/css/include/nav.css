@@ -1,0 +1,21 @@
+nav {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+nav div.nav_wrap {
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #dadada;
+}
+
+nav div.nav_wrap a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav div.nav_wrap a:last-child {
+    margin-right: 15px;
+}
