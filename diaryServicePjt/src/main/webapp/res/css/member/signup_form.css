@@ -1,0 +1,17 @@
+article {
+	width: 1000px;
+	margin: 50px auto 500px;
+}
+
+article div.article_wrap {
+	text-align: center;
+}
+
+
+
+article div.article_wrap input[type="button"],
+article div.article_wrap input[type="reset"] {
+	width: 200px;
+	height: auto;
+	cursor: pointer;
+}

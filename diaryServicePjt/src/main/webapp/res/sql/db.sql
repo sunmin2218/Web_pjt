@@ -35,4 +35,9 @@ values('saeri2', '1111', 'saeri@gmail.com','010-2222-2222');
 
 drop table tbl_member;
 
+select count(*) from tbl_member where memId = 'gildong';
+
+delete from tbl_member;
+
+
 
