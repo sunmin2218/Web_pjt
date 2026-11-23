@@ -1,5 +1,7 @@
 package com.office.diary;
 
+import java.util.List;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
@@ -23,6 +25,17 @@ public class DiaryService {
 		int result = diaryDao.insertNewDiary(diaryDto);
 		
 		return result;
+	}
+
+	public List<DiaryDto> getMyDiaries(HttpServletRequest request, HttpServletResponse response) {
+		
+		String signinedMemberId = String.valueOf(request.getSession().getAttribute("signinedMemberId"));
+		
+		List<DiaryDto> myDiaries = diaryDao.selectDiariesByMemId(signinedMemberId);
+		
+		request.setAttribute("myDiaries", myDiaries); // String, Object 타입
+		
+		return null;
 	}
 	
 }
