@@ -7,6 +7,6 @@ public interface IMemberService {
 	
 	public int signup(HttpServletRequest request, HttpServletResponse response);
 	
-	public int signin(HttpServletRequest request, HttpServletResponse response);
+	public MemberDto signin(HttpServletRequest request, HttpServletResponse response);
 
 }

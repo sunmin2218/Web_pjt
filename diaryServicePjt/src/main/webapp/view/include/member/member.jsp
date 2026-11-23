@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
     
-    <script>
+ <script>
         
     function signupForm() {
     	console.log('singupForm()')
@@ -20,5 +20,20 @@
     	
     }
     
+    function signinForm() {
+    	console.log('signin form()')
+    	
+    	let form = document.signin_form;
+    	if (form.memId.value === '') {
+    		alert('Please input member ID')
+    		form.memId.focus();
+    	} else if (form.memPw.value === '') {
+    		alert('Please input member PW')
+    		form.memPw.focus();
+    	} else {
+    		form.submit();
+    	}
+    }
     
-    </script>
+    
+</script>
