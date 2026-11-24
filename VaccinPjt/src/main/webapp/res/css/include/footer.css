@@ -1,0 +1,15 @@
+footer {
+	border-top: 1px solid #dadada;
+    margin-top: 200px;
+
+}
+
+footer div.footer_wrap {
+    height: 150px;
+    line-height: 150px;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    margin: 0 auto;
+    font-size: .85em;
+}

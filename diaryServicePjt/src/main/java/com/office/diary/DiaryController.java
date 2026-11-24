@@ -49,8 +49,6 @@ public class DiaryController extends HttpServlet {
 			
 			break;
 			
-			
-			
 		case "/diary_list.dir":
 			
 			diaryService = new DiaryService(new DiaryDao());
@@ -58,22 +56,17 @@ public class DiaryController extends HttpServlet {
 			
 			nextPage = generateView("list");
 			
-			break;	
-			
+			break;
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
 		dispatcher.forward(request, response);
-		
 	}
-
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		doGet(request, response);
-		
 	}
-		
 		
 		private String generateView(String viewName) {
 			return "view/diary/" + viewName + ".jsp";

@@ -1,0 +1,11 @@
+header {
+	border-bottom: 1px solid #dadada;
+}
+
+header div.header_wrap {
+	width: 1000px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0 auto;
+}

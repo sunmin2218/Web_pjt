@@ -21,7 +21,7 @@ public class DiaryDao {
 		PreparedStatement pstmt = null;
 		
 		try {
-			// 1. 드라이버 로드 in 메모리
+			// 1. 메모리 안에 드라이버 로드
 			Class.forName(DRIVER);
 			
 			// 2. 다리 건설: Connection 생성 by 인증(Authentication)
@@ -74,7 +74,6 @@ public class DiaryDao {
 		ResultSet rs = null;
 		List<DiaryDto> diaryDtos = new ArrayList<DiaryDto>();
 		
-		
 		try {
 			// 1. 드라이버 로드 in 메모리
 			Class.forName(DRIVER);
@@ -83,9 +82,9 @@ public class DiaryDao {
 			conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
 			
 			// 3. SQL 작성(작업 지시서)
-			String sql = "select * from tbl_diary td"
-					   + "join tbl_member tm"
-					   + "on td.memId = tm.memId"
+			String sql = "select * from tbl_diary td "
+					   + "join tbl_member tm "
+					   + "on td.memId = tm.memId "
 					   + "where td.memId = ?";
 			
 			// 4. 일꾼 선택(생성)
@@ -133,14 +132,11 @@ public class DiaryDao {
 				
 				diaryDtos.add(diaryDto);
 			} // Dto 로 데이터들 옮겨야 하니까 get, set 으로 옮기고 어레이리스트 만들어서 거기다가 add 해준다
-			
-			
-			
+				
 		} catch (Exception e) {
 			e.printStackTrace();
 			
 		} finally {
-			
 			
 			//8. 외부 자원 해제
 			
@@ -151,7 +147,6 @@ public class DiaryDao {
 				
 			} catch (Exception e2) {
 				e2.printStackTrace();
-				
 			}	
 		}
 		return diaryDtos;
