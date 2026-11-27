@@ -1,0 +1,22 @@
+section {
+	
+}
+
+section div.section_wrap {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section div.section_wrap table.list {
+	border-collapse: collapse;
+}
+
+
+
+section div.section_wrap table.list th,
+section div.section_wrap table.list td {
+	font-size: .9em;
+	border: 1px solid #dadada;
+	padding: 5px 0;
+}

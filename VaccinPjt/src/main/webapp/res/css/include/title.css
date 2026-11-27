@@ -20,3 +20,67 @@ li {
 	list-style : none;
 	float: left;
 }
+
+
+/*  input common css start */
+
+.basic_input {
+	width: 350px;
+	padding: 7px;
+	margin: 2px;
+	outline: none;
+	font-size: 1.2em;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+
+.basic_input:focus {
+	background-color: rgba(0, 0, 255, .1);
+}
+
+
+.basic_button {
+	width: 125px;
+	padding: 7px;
+	margin: 2px;
+	outline: none;
+	font-size: 1.2em;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.basic_button:hover {
+	background-color: rgba(0, 0, 255, .1);
+	box-shadow: 3px 3px 3px rgba(200, 200, 200, .4);
+}
+
+.basic_select {
+	width: 368px;
+	padding: 10px 7px;
+	margin: 2px;
+	outline: none;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+}
+
+.basic_select:focus {
+	background: rgba(0, 0, 255, .1);
+	
+}
+
+
+
+/*  input common css end */
+
+
+
+
+
+
+
+
+
+
+
+

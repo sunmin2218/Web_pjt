@@ -4,6 +4,8 @@ create database db_diary;
 
 use db_diary;
 
+drop database db_member;
+
 create table tbl_member(
 memNo	  int  auto_increment comment '회원번호',
 memId	  varchar(20)	unique not null	comment '회원아이디',
@@ -66,6 +68,12 @@ select * from tbl_diary td
 join tbl_member tm
 on td.memId = tm.memId
 where td.memId = 'chanho';
+
+
+
+
+
+
 
 
 
@@ -181,8 +189,44 @@ create table tbl_admin(
 	primary key(admin_no)
 );
 
-select * from tbl_admin;
+insert into tbl_admin(admin_id, admin_pw, admin_mail, admin_phone) 
+values('gildong', '1234', 'gildong@gmail.com','010-1234-5678');
+
+insert into tbl_admin(admin_id, admin_pw, admin_mail, admin_phone) 
+values('chanho', '0000', 'chanho@gmail.com','010-0000-0000');
+
+insert into tbl_admin(admin_id, admin_pw, admin_mail, admin_phone) 
+values('saeri', '1111', 'saeri@gmail.com','010-1111-1111');
+
 desc tbl_admin;
+select * from tbl_admin;
+drop table tbl_admin;
+
+
+select * from tbl_flu_vaccin_person fvp
+join tbl_social_number sn
+on fvp.ss_number = sn.ss_number
+join tbl_fv_location fl
+on fvp.fv_location_no = fl.fv_location_no
+join tbl_fv_type ft
+on fvp.fv_type = ft.fv_type
+order by fvp.fvp_no desc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

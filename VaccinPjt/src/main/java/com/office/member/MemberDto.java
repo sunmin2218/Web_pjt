@@ -28,8 +28,7 @@ public class MemberDto {
 	}
 	
 	public MemberDto(String admin_id, String admin_pw, String admin_mail, String admin_phone) {
-
-
+		
 		this.admin_id = admin_id;
 		this.admin_pw = admin_pw;
 		this.admin_mail = admin_mail;
